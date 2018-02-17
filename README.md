@@ -3,6 +3,8 @@
 
 [![Coverage status](https://codecov.io/gh/jjesusfilho/cidades/branch/master/graph/badge.svg)](https://codecov.io/github/jjesusfilho/cidades?branch=master)
 
+[![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/jjesusfilho/cidades?branch=master&svg=true)](https://ci.appveyor.com/project/jjesusfilho/cidades)
+
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 cidades
 =======
