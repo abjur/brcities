@@ -1,6 +1,8 @@
 
 [![Travis-CI Build Status](https://travis-ci.org/jjesusfilho/cidades.svg?branch=master)](https://travis-ci.org/jjesusfilho/cidades)
 
+[![Coverage status](https://codecov.io/gh/jjesusfilho/cidades/branch/master/graph/badge.svg)](https://codecov.io/github/jjesusfilho/cidades?branch=master)
+
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 cidades
 =======
