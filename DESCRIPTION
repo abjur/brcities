@@ -2,6 +2,7 @@ Package: cidades
 Version: 0.0.0.9000
 Title: Downloads Brazilian Cities Indicators
 Description: This function has only one function to download cities data from Brazilian Governament.
+Mantainer: José de Jesus Filho <jjesusfilho@gmail.com>
 Authors@R: person("José", "de Jesus Filho", , "jjesusfilho@gmail.com", c("aut", "cre"))
 License: MIT + file LICENSE
 Encoding: UTF-8
