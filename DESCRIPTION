@@ -1,9 +1,21 @@
-Package: ibge
+Package: cidades
 Version: 0.0.0.9000
-Title: What the Package Does (One Line, Title Case)
-Description: What the package does (one paragraph).
-Authors@R: person("First", "Last", , "first.last@example.com", c("aut", "cre"))
-License: What license it uses
+Title: Downloads Brazilian Cities Indicators
+Description: This function has only one function to download cities data from Brazilian Governament.
+Authors@R: person("José", "de Jesus Filho", , "jjesusfilho@gmail.com", c("aut", "cre"))
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 ByteCompile: true
+Depends: R (>= 2.10)
+Imports:
+    httr,
+    purrr,
+    xml2,
+    stringr,
+    dplyr,
+    stringi,
+    tibble,
+    magrittr,
+    jsonlite
+RoxygenNote: 6.0.1

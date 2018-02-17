@@ -1,0 +1,58 @@
+---
+output: github_document
+---
+
+[![Travis-CI Build Status](https://travis-ci.org/jjesusfilho/cidades.svg?branch=master)](https://travis-ci.org/jjesusfilho/cidades)
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+options(knitr.table.format = "html") 
+```
+# cidades
+
+The goal of cidades is to download indicators of Brazilian cities from the
+Brazilian National Institute of Geography and Statistics, aka IBGE.
+
+## Installation
+
+You can install cidades from GitHub with:
+
+```{r gh-installation, eval = FALSE}
+# install.packages("devtools")
+devtools::install_github("jjesusfilho/cidades")
+```
+
+## Usage
+
+There are 28 indicators put available by IBGE. You can load them via:
+``` {r eval=FALSE,echo=TRUE}
+data(df_indicator)
+```
+
+And also check them below:
+
+```{r echo=FALSE, message=FALSE, warning=FALSE }
+data("df_indicators")
+library(knitr)
+library(kableExtra)
+kable(df_indicators, "html") %>%
+  kable_styling(bootstrap_options = c("striped", "hover"))
+```
+
+### Example
+
+The only function returns a tibble with the indicators from the state cities.
+
+```{r eval=FALSE}
+pop_ac<-city_indicators(uf="ac",indicators=25207)
+
+```
+
+
