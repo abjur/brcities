@@ -20,6 +20,12 @@ devtools::install_github("jjesusfilho/cidades")
 Usage
 -----
 
+The only function returns a tibble with the indicators from the state cities.
+
+``` r
+pop_ac<-city_indicators(uf="ac",indicators=25207)
+```
+
 There are 28 indicators put available by IBGE. You can load them via:
 
 ``` r
@@ -266,10 +272,3 @@ Urbanização de vias públicas \[2010\]
 </tr>
 </tbody>
 </table>
-### Example
-
-The only function returns a tibble with the indicators from the state cities.
-
-``` r
-pop_ac<-city_indicators(uf="ac",indicators=25207)
-```

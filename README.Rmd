@@ -31,7 +31,16 @@ devtools::install_github("jjesusfilho/cidades")
 
 ## Usage
 
+The only function returns a tibble with the indicators from the state cities.
+
+```{r eval=FALSE}
+pop_ac<-city_indicators(uf="ac",indicators=25207)
+
+```
+
+
 There are 28 indicators put available by IBGE. You can load them via:
+
 ``` {r eval=FALSE,echo=TRUE}
 data(df_indicator)
 ```
@@ -46,13 +55,6 @@ kable(df_indicators, "html") %>%
   kable_styling(bootstrap_options = c("striped", "hover"))
 ```
 
-### Example
 
-The only function returns a tibble with the indicators from the state cities.
-
-```{r eval=FALSE}
-pop_ac<-city_indicators(uf="ac",indicators=25207)
-
-```
 
 
