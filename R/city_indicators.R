@@ -8,9 +8,9 @@
 #'
 #' @examples
 #'
-#' pop_ac<-ibge_cidades(uf="ac",indicators=25207)
+#' pop_ac<-city_indicators(uf="ac",indicators=25207)
 
-ibge_cidades <- function(uf = NULL, indicators = NULL) {
+city_indicators <- function(uf = NULL, indicators = NULL) {
 
   if (length(indicators) > 6) {
     stop("you only can provide six indicators at a time")
