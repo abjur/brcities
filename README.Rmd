@@ -2,9 +2,9 @@
 output: github_document
 ---
 
-[![Travis-CI Build Status](https://travis-ci.org/jjesusfilho/cidades.svg?branch=master)](https://travis-ci.org/jjesusfilho/cidades)
-[![Coverage status](https://codecov.io/gh/jjesusfilho/cidades/branch/master/graph/badge.svg)](https://codecov.io/github/jjesusfilho/cidades?branch=master)
-[![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/jjesusfilho/cidades?branch=master&svg=true)](https://ci.appveyor.com/project/jjesusfilho/cidades)
+[![Travis-CI Build Status](https://travis-ci.org/jjesusfilho/brcities.svg?branch=master)](https://travis-ci.org/jjesusfilho/brcities)
+[![Coverage status](https://codecov.io/gh/jjesusfilho/brcities/branch/master/graph/badge.svg)](https://codecov.io/github/jjesusfilho/brcities?branch=master)
+[![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/jjesusfilho/brcities?branch=master&svg=true)](https://ci.appveyor.com/project/jjesusfilho/brcities)
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
@@ -17,18 +17,18 @@ knitr::opts_chunk$set(
 )
 options(knitr.table.format = "html") 
 ```
-# cidades
+# brcities
 
-The goal of cidades is to download indicators of Brazilian cities from the
+The goal of brcities is to download indicators of Brazilian cities from the
 Brazilian National Institute of Geography and Statistics, aka IBGE.
 
 ## Installation
 
-You can install cidades from GitHub with:
+You can install brcities from GitHub with:
 
 ```{r gh-installation, eval = FALSE}
 # install.packages("devtools")
-devtools::install_github("jjesusfilho/cidades")
+devtools::install_github("jjesusfilho/brcities")
 ```
 
 ## Usage

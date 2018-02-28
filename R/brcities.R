@@ -1,10 +1,10 @@
-#' \code{cidades} package
+#' \code{brcities} package
 #'
 #' Downloads Brazilian cities indicators
 #'
 #'
 #' @docType package
-#' @name cidades
+#' @name brcities
 #' @importFrom magrittr %>%
 NULL
 

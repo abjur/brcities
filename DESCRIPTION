@@ -1,4 +1,4 @@
-Package: cidades
+Package: brcities
 Version: 0.0.0.9000
 Title: Downloads Brazilian Cities Indicators
 Description: This function has only one function to download cities data from Brazilian Governament.
@@ -9,16 +9,16 @@ Encoding: UTF-8
 LazyData: true
 ByteCompile: true
 Depends: R (>= 2.10)
-Imports:
-    httr,
+Imports: 
     purrr,
-    xml2,
-    stringr,
     dplyr,
     stringi,
-    tibble,
+    stringr,
+    jsonlite,
+    httr,
+    xml2,
     magrittr,
-    jsonlite
+    readr
 RoxygenNote: 6.0.1
 Suggests: 
     testthat,

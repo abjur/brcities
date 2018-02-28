@@ -1,4 +1,4 @@
 library(testthat)
-library(cidades)
+library(brcities)
 
-test_check("cidades")
+test_check("brcities")
