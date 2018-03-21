@@ -1,4 +1,4 @@
-#' Get data of Sao Paulo state, cities and regions from Seade Foundation
+#' Get state, cities and regions demographic data from Sao Paulo.
 #'
 #' @param year vector with years you want to get the data
 #' @param place  code, according to place data.

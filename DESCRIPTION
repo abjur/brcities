@@ -18,7 +18,9 @@ Imports:
     httr,
     xml2,
     magrittr,
-    readr
+    readr,
+    RecordLinkage,
+    abjutils
 RoxygenNote: 6.0.1
 Suggests: 
     testthat,

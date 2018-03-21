@@ -2,7 +2,7 @@
 % Please edit documentation in R/seade_imp.R
 \name{seade_imp}
 \alias{seade_imp}
-\title{Get data of Sao Paulo state, cities and regions from Seade Foundation}
+\title{Get state, cities and regions demographic data from Sao Paulo.}
 \usage{
 seade_imp(place, variable, year)
 }
@@ -18,7 +18,7 @@ a data frame with place code, place name, parent place,variable code,
      variable name, period that the data is available, unity, year, and variable name.
 }
 \description{
-Get data of Sao Paulo state, cities and regions from Seade Foundation
+Get state, cities and regions demographic data from Sao Paulo.
 }
 \examples{
 

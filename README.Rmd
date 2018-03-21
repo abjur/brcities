@@ -20,7 +20,7 @@ options(knitr.table.format = "html")
 # brcities
 
 The goal of brcities is to download indicators of Brazilian cities from the
-Brazilian National Institute of Geography and Statistics, aka IBGE.
+Brazilian National Institute of Geography and Statistics, aka IBGE. It also downloads city's demographic data from Fundação Seade in São Paulo.
 
 ## Installation
 
@@ -28,18 +28,25 @@ You can install brcities from GitHub with:
 
 ```{r gh-installation, eval = FALSE}
 # install.packages("devtools")
-devtools::install_github("jjesusfilho/brcities")
+devtools::install_github("abjur/brcities")
 ```
 
 ## Usage
 
-The only function returns a tibble with the indicators from the state cities.
+The `city_indicators()` function returns a tibble with the indicators from the state cities. A list of all indicators is found at the end of this readme.
 
 ```{r eval=FALSE}
 pop_ac<-city_indicators(uf="ac",indicators=25207)
 
 ```
 
+If you want data from São Paulo's state, check the documentation for `seade_imp()` function. It provides lots of demographic indicators.
+
+## Datasets
+
+The package provides three datasets: `city_code` containing IBGE code for every Brazilian city,  `state_code` containing IBGE code for every federative unity (states + the federal district), and `df_indicators` with the IBGE indicator's numbers.
+
+## IGBE's indicators
 
 There are 28 indicators put available by IBGE. You can load them via:
 
