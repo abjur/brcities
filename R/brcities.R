@@ -1,6 +1,6 @@
 #' \code{brcities} package
 #'
-#' Downloads brazilian cities crime indicators
+#' Downloads brazilian cities' demographic indicators
 #'
 #'
 #' @docType package

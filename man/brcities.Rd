@@ -6,5 +6,5 @@
 \alias{brcities-package}
 \title{\code{brcities} package}
 \description{
-Downloads brazilian cities crime indicators
+Downloads brazilian cities' demographic indicators
 }
