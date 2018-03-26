@@ -1,4 +1,4 @@
-#' Get state, cities and regions demographic data from Sao Paulo.
+#' Get state, cities and regions demographics from Sao Paulo.
 #'
 #' @param year vector with years you want to get the data
 #' @param place  code, according to place data.
@@ -6,13 +6,16 @@
 #'
 #' @return a data frame with place code, place name, parent place,variable code,
 #'      variable name, period that the data is available, unity, year, and variable name.
+#'
+#' @details all codes for the places and indicators (variables) are available at `sp_place`
+#'      dataset.
 #' @export
 #'
 #' @examples
 #'
-#' seade_imp(2016:2017,place=1,variable=55)
+#' sp_indicators(2016:2017,place=1,variable=55)
 #'
-seade_imp<-function(place,variable,year){
+sp_indicators<-function(place,variable,year){
 
   purrr::pmap_dfr(list(a=place,b=variable,c=year),function(a,b,c) {
 

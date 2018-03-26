@@ -8,26 +8,26 @@
 #'
 #' @examples
 #'
-#' pop_ac<-city_indicators(uf="ac",indicators=25207)
+#' pop_ac<-br_city_indicators(uf="ac",indicators=25207)
 
-city_indicators <- function(uf = NULL, indicators = NULL) {
+br_city_indicators <- function(uf = NULL, indicators = NULL) {
 
   if (length(indicators) > 6) {
-    stop("you only can provide six indicators at a time")
+    stop("you only can get six indicators at a time")
   }
 
 
   uf <- toupper(uf)
 
 
-  code <- state_code$code[state_code$uf == uf]
+  code <- br_state_code$code[br_state_code$uf == uf]
 
-  i <- df_indicators$indicator[df_indicators$id %in% indicators] %>%
+  i <- br_indicators_code$indicator[br_indicators_code$code %in% indicators] %>%
     stringr::str_replace_all("\\[.*", "") %>%
     stringr::str_trim() %>%
     stringr::str_replace_all("\\s+", "_") %>%
     stringr::str_to_lower() %>%
-    stringi::stri_trans_general("latin-ascii")
+    abjutils::rm_accent()
 
   indicacators <- paste0(as.character(indicators), collapse = "|")
 
@@ -52,6 +52,6 @@ city_indicators <- function(uf = NULL, indicators = NULL) {
     dplyr::select(-dplyr::matches("localidade\\d")) %>%
     dplyr::mutate(localidade = as.integer(as.character(localidade))) %>%
     dplyr::rename(code = localidade) %>%
-    dplyr::right_join(city_code, .)
+    dplyr::right_join(br_city_code, .)
 
 }

@@ -1,14 +1,15 @@
 Package: brcities
 Version: 0.0.0.9000
-Title: Downloads Brazilian Cities Indicators
-Description: This function has only one function to download cities data from Brazilian Governament.
-Mantainer: José de Jesus Filho <jjesusfilho@gmail.com>
-Authors@R: person("José", "de Jesus Filho", , "jjesusfilho@gmail.com", c("aut", "cre"))
+Title: Downloads Brazilian Cities' Demographics
+Description: This package downloads Brazilian cities' demographics from the Brazilian Intitute of 
+    Geography and Statistics, aka IBGE, and from Fundação Seade in São Paulo state.
+Mantainer: José de Jesus Filho <jjesus@abj.org.br>
+Authors@R: person("José", "de Jesus Filho", , "jjesus@abj.org.br", c("aut", "cre"))
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 ByteCompile: true
-Depends: R (>= 2.10)
+Depends: R (>= 3.4.4)
 Imports: 
     purrr,
     dplyr,

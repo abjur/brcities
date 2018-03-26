@@ -20,7 +20,9 @@ options(knitr.table.format = "html")
 # brcities
 
 The goal of brcities is to download indicators of Brazilian cities from the
-Brazilian National Institute of Geography and Statistics, aka IBGE. It also downloads city's demographic data from Fundação Seade in São Paulo.
+Brazilian National Institute of Geography and Statistics, aka IBGE. By now it also downloads cities demographics from Fundação Seade in São Paulo. We hope to add more data from states's level government sources.
+
+All functions and datasets available start with two letters indicating the source of the information. So if the federal government is the source, it starts with `br` followed by underscore and the remaining of the function name. Likewise, if the source is São Paulo, the function will start with `sp`.
 
 ## Installation
 
@@ -36,7 +38,7 @@ devtools::install_github("abjur/brcities")
 The `city_indicators()` function returns a tibble with the indicators from the state cities. A list of all indicators is found at the end of this readme.
 
 ```{r eval=FALSE}
-pop_ac<-city_indicators(uf="ac",indicators=25207)
+pop_ac<-br_city_indicators(uf="ac",indicators=25207)
 
 ```
 
