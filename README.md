@@ -5,7 +5,9 @@
 brcities
 ========
 
-The goal of brcities is to download indicators of Brazilian cities from the Brazilian National Institute of Geography and Statistics, aka IBGE. It also downloads city's demographic data from Fundação Seade in São Paulo.
+The goal of brcities is to download Brazilian cities' indicators from the Brazilian National Institute of Geography and Statistics, aka IBGE. For the time being, it also downloads cities demographics from Fundação Seade in São Paulo. We hope to add more data from states's level government sources.
+
+All functions and datasets available start with two letters indicating the source of the information. So if the federal government is the source, it starts with `br` followed by underscore and the remaining of the function name. Likewise, if the source is São Paulo, the function will start with `sp`. Once we add more sources from the states, all functions will start either with `br_` or `uf_` and the user will have to provide the name of the state.
 
 Installation
 ------------
@@ -20,18 +22,18 @@ devtools::install_github("abjur/brcities")
 Usage
 -----
 
-The `city_indicators()` function returns a tibble with the indicators from the state cities. A list of all indicators is found at the end of this readme.
+The `br_city_indicators()` function returns a tibble with the indicators from the state cities. A list of all indicators is found at the end of this readme.
 
 ``` r
-pop_ac<-city_indicators(uf="ac",indicators=25207)
+pop_ac<-br_city_indicators(uf="ac",indicators=25207)
 ```
 
-If you want data from São Paulo's state, check the documentation for `seade_imp()` function. It provides lots of demographic indicators.
+If you want data from São Paulo's state, check the documentation for `sp_indicators()` function. It provides lots of demographic indicators.
 
 Datasets
 --------
 
-The package provides three datasets: `city_code` containing IBGE code for every Brazilian city, `state_code` containing IBGE code for every federative unity (states + the federal district), and `df_indicators` with the IBGE indicator's numbers.
+The package provides five datasets: `br_city_code` containing IBGE code for every Brazilian city along with the respective state code, `br_state_code` containing IBGE code for every federative unity (states + the federal district), `br_indicators_code` with the IBGE indicator's numbers, `sp_place` with São Paulo places (cities and regions) codes, and `sp_variable` with the variables (indicators) code to get demographics from São Paulo.
 
 IGBE's indicators
 -----------------
@@ -39,7 +41,7 @@ IGBE's indicators
 There are 28 indicators put available by IBGE. You can load them via:
 
 ``` r
-data(df_indicator)
+data(br_indicators_code)
 ```
 
 And also check them below:
@@ -51,7 +53,7 @@ And also check them below:
 indicator
 </th>
 <th style="text-align:right;">
-id
+code
 </th>
 </tr>
 </thead>
