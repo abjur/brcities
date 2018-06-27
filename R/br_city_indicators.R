@@ -13,7 +13,7 @@
 br_city_indicators <- function(uf = NULL, indicators = NULL) {
 
   if (length(indicators) > 6) {
-    stop("you only can get six indicators at a time")
+    stop("you can only get six indicators at a time")
   }
 
 
@@ -52,6 +52,6 @@ br_city_indicators <- function(uf = NULL, indicators = NULL) {
     dplyr::select(-dplyr::matches("localidade\\d")) %>%
     dplyr::mutate(localidade = as.integer(as.character(localidade))) %>%
     dplyr::rename(code = localidade) %>%
-    dplyr::right_join(br_city_code, .)
+    dplyr::right_join(br_city_code, .,by=c("city_code"="code"))
 
 }

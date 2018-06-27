@@ -10,7 +10,7 @@ Encoding: UTF-8
 LazyData: true
 ByteCompile: true
 Depends: R (>= 3.4.4)
-Imports: 
+Imports:
     purrr,
     dplyr,
     stringi,
@@ -23,6 +23,9 @@ Imports:
     RecordLinkage,
     abjutils
 RoxygenNote: 6.0.1
-Suggests: 
+Suggests:
     testthat,
-    covr
+    covr,
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
