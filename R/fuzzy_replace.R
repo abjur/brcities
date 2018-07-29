@@ -1,32 +1,39 @@
-#' Replace a vector strings by strings from another vector using fuzzy logic.
+#' Search for a word or phrase in a second vector that matches the another word in the first
+#'     vector.
 #'
-#' @param string_vector The vector with strings to be replaced
-#' @param string_replacement The vector with usually the correct strings to take
-#     place on the previous vector
+#' @param x The vector with strings to be searched for in the second vector
+#' @param y The vector with usually the correct strings to be found
+#
 #'
 #' @details This is a helpful function to correct city names according to IBGE
 #'     names, when the list is to long to correct by hand.
 #'
-#' @return a vector with the provided string_vector replaced by fuzzy match from
-#'     string_replacement vector.
+#' @return A vector of best matches from y based on the x input vector.
 #' @export
 #'
 #' @examples
-#' string_vector<-c("Mogi das Cruses","Sao Paulo","CANTA GALLO")
-#' string_replacement<-c("Canta Galo","Mogi das Cruzes","São Paulo")
-#' fuzzy_replace(string_vector,string_replacement)
+#' wrong_names<-c("Mogi das Cruses","Sao Paulo","CANTA GALLO")
+#' correct_names<-c("Canta Galo","Mogi das Cruzes","São Paulo")
+#' fuzzy_search(x=wrong_names,y=correct_names)
 
-fuzzy_replace= function(string_vector,string_replacement){
-  sv<-string_vector %>% toupper() %>% abjutils::rm_accent()
-  sr<-string_replacement %>% toupper() %>% abjutils::rm_accent()
 
-  s<-sr %>%
-    purrr::map_int(~{
-      .x %>%
-        RecordLinkage::levenshteinSim(sv) %>%
-        match(max(.),.)
-    })
-  string_vector[s]<-string_replacement
+fuzzy_search<-function(x,y){
+  x1 <-x %>%
+    stringi::stri_trans_general("latin-ascii") %>%
+    stringi::stri_trans_tolower() %>%
+    stringi::stri_trim_both() %>%
+    stringi::stri_replace_all_regex("\\s+","_")
+  y1 <-y %>%
+    stringi::stri_trans_general("latin-ascii") %>%
+    stringi::stri_trans_tolower() %>%
+    stringi::stri_trim_both() %>%
+    stringi::stri_replace_all_regex("\\s+","_")
 
-  return(string_vector)
+  purrr::map(x1,~{
+    a<- stringdist::stringdist(.x,y1)
+    b<-which.min(a)
+    d<-y[b]
+  }) %>%
+    unlist()
+
 }

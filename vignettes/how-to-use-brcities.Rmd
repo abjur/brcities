@@ -16,4 +16,4 @@ knitr::opts_chunk$set(
 )
 ```
 
-Package brcities is usefull to download Brazilian cities's main indicators data, such as population useful if you want to download Brazilian cities population
+Package brcities is usefull to download Brazilian cities's main indicators data, such as population.

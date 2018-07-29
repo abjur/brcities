@@ -21,7 +21,8 @@ Imports:
     magrittr,
     readr,
     RecordLinkage,
-    abjutils
+    abjutils,
+    stringdist
 RoxygenNote: 6.0.1
 Suggests:
     testthat,
