@@ -2,8 +2,7 @@ Package: brcities
 Version: 0.1.0
 Title: Downloads Brazilian Cities' Demographics
 Description: This package downloads Brazilian cities' demographics from the Brazilian Intitute of 
-    Geography and Statistics, aka IBGE, and from Fundaç\\u00e3o Seade in S\\u00e3o Paulo state.
-Mantainer: Jos\\u00e9 de Jesus Filho <jjesus@abj.org.br>
+    Geography and Statistics, aka IBGE, and from Funda\\u00e7\\u00e3o Seade in S\\u00e3o Paulo state.
 Authors@R: person("Jos\\u00e9", "de Jesus Filho", , "jjesus@abj.org.br", c("aut", "cre"))
 License: MIT + file LICENSE
 Encoding: UTF-8
