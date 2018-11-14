@@ -23,8 +23,8 @@ al_pop<-br_city_indicators(uf="al",indicators = 29171)
 
 test_that("br_city_indicators works",{
 
-  expect_equal(dim(am_density),c(62,8))
-  expect_equal(dim(al_pop),c(102,9))
+  expect_equal(nrow(am_density),62)
+  expect_equal(nrow(al_pop),102)
 
 })
 

@@ -18,6 +18,7 @@ A dataset containing the indicators' names and their respective codes.
 \itemize{
   \item indicator. The indicator's name
   \item code. The indicator's number
+  \item year. Year of available data
   ...
 }
 }
