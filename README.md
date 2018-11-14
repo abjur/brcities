@@ -33,7 +33,7 @@ If you want data from São Paulo's state, check the documentation for `sp_indica
 Datasets
 --------
 
-The package provides five datasets: `br_city_code` containing IBGE code for every Brazilian city along with the respective state code, `br_state_code` containing IBGE code for every federative unity (states + the federal district), `br_indicators_code` with the IBGE indicator's numbers, `sp_place` with São Paulo places (cities and regions) codes, and `sp_variable` with the variables (indicators) code to get demographics from São Paulo.
+The package provides five datasets: `br_city_code` containing IBGE code for every Brazilian city along with the respective state code, and also each cities' latlong, `br_state_code` containing IBGE code for every federative unity (states + the federal district), `br_indicators_code` with the IBGE indicator's numbers, `sp_place` with São Paulo places (cities and regions) codes, and `sp_variable` with the variables (indicators) code to get demographics from São Paulo.
 
 IGBE's indicators
 -----------------
@@ -55,231 +55,318 @@ indicator
 <th style="text-align:right;">
 code
 </th>
+<th style="text-align:left;">
+year
+</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td style="text-align:left;">
-População estimada \[2017\]
+População estimada
 </td>
 <td style="text-align:right;">
 29171
 </td>
+<td style="text-align:left;">
+2017
+</td>
 </tr>
 <tr>
 <td style="text-align:left;">
-População no último censo \[2010\]
+População no último censo
 </td>
 <td style="text-align:right;">
 25207
 </td>
+<td style="text-align:left;">
+2010
+</td>
 </tr>
 <tr>
 <td style="text-align:left;">
-Densidade demográfica \[2010\]
+Densidade demográfica
 </td>
 <td style="text-align:right;">
 29168
 </td>
+<td style="text-align:left;">
+2010
+</td>
 </tr>
 <tr>
 <td style="text-align:left;">
-Salário médio mensal dos trabalhadores formais \[2015\]
+Salário médio mensal dos trabalhadores formais
 </td>
 <td style="text-align:right;">
 29765
 </td>
+<td style="text-align:left;">
+2015
+</td>
 </tr>
 <tr>
 <td style="text-align:left;">
-Pessoal ocupado \[2015\]
+Pessoal ocupado
 </td>
 <td style="text-align:right;">
 29763
 </td>
+<td style="text-align:left;">
+2015
+</td>
 </tr>
 <tr>
 <td style="text-align:left;">
-População ocupada \[2015\]
+População ocupada
 </td>
 <td style="text-align:right;">
 60036
 </td>
+<td style="text-align:left;">
+2015
+</td>
 </tr>
 <tr>
 <td style="text-align:left;">
-Percentual da população com rendimento nominal mensal per capita de até 1/2 salário mínimo \[2010\]
+Percentual da população com rendimento nominal mensal per capita de até 1/2 salário mínimo
 </td>
 <td style="text-align:right;">
 60037
 </td>
+<td style="text-align:left;">
+2010
+</td>
 </tr>
 <tr>
 <td style="text-align:left;">
-Taxa de escolarização de 6 a 14 anos de idade \[2010\]
+Taxa de escolarização de 6 a 14 anos de idade
 </td>
 <td style="text-align:right;">
 60045
 </td>
+<td style="text-align:left;">
+2010
+</td>
 </tr>
 <tr>
 <td style="text-align:left;">
-IDEB – Anos iniciais do ensino fundamental \[2015\]
+IDEB – Anos iniciais do ensino fundamental
 </td>
 <td style="text-align:right;">
 60041
 </td>
+<td style="text-align:left;">
+2015
+</td>
 </tr>
 <tr>
 <td style="text-align:left;">
-IDEB – Anos finais do ensino fundamental \[2015\]
+IDEB – Anos finais do ensino fundamental
 </td>
 <td style="text-align:right;">
 60042
 </td>
+<td style="text-align:left;">
+2015
+</td>
 </tr>
 <tr>
 <td style="text-align:left;">
-Matrículas no ensino fundamental \[2015\]
+Matrículas no ensino fundamental
 </td>
 <td style="text-align:right;">
 5908
 </td>
+<td style="text-align:left;">
+2015
+</td>
 </tr>
 <tr>
 <td style="text-align:left;">
-Matrículas no ensino médio \[2015\]
+Matrículas no ensino médio
 </td>
 <td style="text-align:right;">
 5913
 </td>
+<td style="text-align:left;">
+2015
+</td>
 </tr>
 <tr>
 <td style="text-align:left;">
-Docentes no ensino fundamental \[2015\]
+Docentes no ensino fundamental
 </td>
 <td style="text-align:right;">
 5929
 </td>
+<td style="text-align:left;">
+2015
+</td>
 </tr>
 <tr>
 <td style="text-align:left;">
-Docentes no ensino médio \[2015\]
+Docentes no ensino médio
 </td>
 <td style="text-align:right;">
 5934
 </td>
+<td style="text-align:left;">
+2015
+</td>
 </tr>
 <tr>
 <td style="text-align:left;">
-Número de estabelecimentos de ensino fundamental \[2015\]
+Número de estabelecimentos de ensino fundamental
 </td>
 <td style="text-align:right;">
 5950
 </td>
+<td style="text-align:left;">
+2015
+</td>
 </tr>
 <tr>
 <td style="text-align:left;">
-Número de estabelecimentos de ensino médio \[2015\]
+Número de estabelecimentos de ensino médio
 </td>
 <td style="text-align:right;">
 5955
 </td>
+<td style="text-align:left;">
+2015
+</td>
 </tr>
 <tr>
 <td style="text-align:left;">
-PIB per capita \[2015\]
+PIB per capita
 </td>
 <td style="text-align:right;">
 47001
 </td>
+<td style="text-align:left;">
+2015
+</td>
 </tr>
 <tr>
 <td style="text-align:left;">
-Percentual das receitas oriundas de fontes externas \[2015\]
+Percentual das receitas oriundas de fontes externas
 </td>
 <td style="text-align:right;">
 60048
 </td>
+<td style="text-align:left;">
+2015
+</td>
 </tr>
 <tr>
 <td style="text-align:left;">
-Índice de Desenvolvimento Humano Municipal (IDHM) \[2010\]
+Índice de Desenvolvimento Humano Municipal (IDHM)
 </td>
 <td style="text-align:right;">
 30255
 </td>
+<td style="text-align:left;">
+2010
+</td>
 </tr>
 <tr>
 <td style="text-align:left;">
-Total de receitas realizadas \[2008\]
+Total de receitas realizadas
 </td>
 <td style="text-align:right;">
 28141
 </td>
+<td style="text-align:left;">
+2008
+</td>
 </tr>
 <tr>
 <td style="text-align:left;">
-Total das despesas realizadas \[2008\]
+Total das despesas realizadas
 </td>
 <td style="text-align:right;">
 29748
 </td>
+<td style="text-align:left;">
+2008
+</td>
 </tr>
 <tr>
 <td style="text-align:left;">
-Mortalidade Infantil \[2014\]
+Mortalidade Infantil
 </td>
 <td style="text-align:right;">
 30279
 </td>
+<td style="text-align:left;">
+2014
+</td>
 </tr>
 <tr>
 <td style="text-align:left;">
-Internações por diarreia \[2016\]
+Internações por diarreia
 </td>
 <td style="text-align:right;">
 60032
 </td>
+<td style="text-align:left;">
+2016
+</td>
 </tr>
 <tr>
 <td style="text-align:left;">
-Estabelecimentos de Saúde SUS \[2009\]
+Estabelecimentos de Saúde SUS
 </td>
 <td style="text-align:right;">
 28242
 </td>
+<td style="text-align:left;">
+2009
+</td>
 </tr>
 <tr>
 <td style="text-align:left;">
-Área da unidade territorial \[2016\]
+Área da unidade territorial
 </td>
 <td style="text-align:right;">
 29167
 </td>
+<td style="text-align:left;">
+2016
+</td>
 </tr>
 <tr>
 <td style="text-align:left;">
-Esgotamento sanitário adequado \[2010\]
+Esgotamento sanitário adequado
 </td>
 <td style="text-align:right;">
 60030
 </td>
+<td style="text-align:left;">
+2010
+</td>
 </tr>
 <tr>
 <td style="text-align:left;">
-Arborização de vias públicas \[2010\]
+Arborização de vias públicas
 </td>
 <td style="text-align:right;">
 60029
 </td>
+<td style="text-align:left;">
+2010
+</td>
 </tr>
 <tr>
 <td style="text-align:left;">
-Urbanização de vias públicas \[2010\]
+Urbanização de vias públicas
 </td>
 <td style="text-align:right;">
 60031
+</td>
+<td style="text-align:left;">
+2010
 </td>
 </tr>
 </tbody>
