@@ -12,6 +12,14 @@
 
 br_city_indicators <- function(uf = NULL, indicators = NULL) {
 
+  if (is.null(uf)){
+    stop("You have to provide a state acronym")
+  }
+
+  if (is.null(indicators)){
+    stop("You have to provide at least one indicator number")
+  }
+
   if (length(indicators) > 6) {
     stop("you can only get six indicators at a time")
   }

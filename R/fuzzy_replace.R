@@ -17,7 +17,16 @@
 #' fuzzy_search(x=wrong_names,y=correct_names)
 
 
-fuzzy_search<-function(x,y){
+fuzzy_search<-function(x=NULL,y=NULL){
+
+  if (is.null(x)){
+    stop("You have a string vector for x and y")
+  }
+
+  if (is.null(y)){
+    stop("You have a string vector for x and y")
+  }
+
   x1 <-x %>%
     stringi::stri_trans_general("latin-ascii") %>%
     stringi::stri_trans_tolower() %>%

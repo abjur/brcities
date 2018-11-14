@@ -5,7 +5,7 @@
 \title{Search for a word or phrase in a second vector that matches the another word in the first
     vector.}
 \usage{
-fuzzy_search(x, y)
+fuzzy_search(x = NULL, y = NULL)
 }
 \arguments{
 \item{x}{The vector with strings to be searched for in the second vector}
