@@ -23,7 +23,7 @@ options(knitr.table.format = "html")
 # Overview
 
 The goal of brcities is to download Brazilian cities' indicators from the
-Brazilian National Institute of Geography and Statistics, aka IBGE. For the time being, it also downloads cities demographics from Fundação Seade in São Paulo. We hope to add more data from states's level government sources.
+Brazilian National Institute of Geography and Statistics, aka IBGE. For the time being, it also downloads cities demographics from Fundação Seade in São Paulo. We hope to add more data from states' level government sources.
 
 All available functions and datasets  start with two letters indicating the source of the information. So if the Federal Government is the source, they start with `br` followed by and underscore and the remaining of the function name. Likewise, if the source is São Paulo, the function will start with `sp`. Once we add more sources from the states, all functions will start either with `br_` or `uf_` and the user will have to provide the name of the state.
 
