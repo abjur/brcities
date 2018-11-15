@@ -1,10 +1,17 @@
 Package: brcities
 Version: 0.1.0
 Title: Downloads Brazilian Cities' Demographics
-Description: This package downloads Brazilian cities' demographics from the Brazilian Intitute of 
-    Geography and Statistics, aka IBGE, and from Fundação Seade in São Paulo state.
-Authors@R: person("José", "de Jesus Filho", , "jjesus@abj.org.br", c("aut", "cre"),
-           person(family = "Brazilian Jurimetrics Association", role = "cph"))
+Description: The Brazilian Jurimetrics Association (ABJ in Portuguese,
+  see <http://www.abjur.org.br/en/> for more information) is a non-profit
+  organization which aims to investigate and promote the use of
+  statistics and probability in the study of Law and its institutions.
+  This package downloads Brazilian cities' demographics from the Brazilian Intitute of 
+  Geography and Statistics, aka IBGE, and from Fundação Seade in São Paulo state.
+Authors@R:c(
+   person("José", "de Jesus Filho", role = c("aut", "cre"), email="jjesus@abj.org.br"),
+   person("Julio", "Trecenti", role= "ctb", email= "jtrecenti@abj.org.br"),
+   person(family = "Brazilian Jurimetrics Association", role = "cph")
+   )
 URL: https://github.com/abjur/brcities
 License: MIT + file LICENSE
 Encoding: UTF-8

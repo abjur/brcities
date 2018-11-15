@@ -2,7 +2,7 @@
 #'
 #' @param year vector with years you want to get the data
 #' @param place  code, according to place data.
-#' @param variable variable code acording to variable data.
+#' @param variable variable code according to variable data.
 #'
 #' @return a data frame with place code, place name, parent place,variable code,
 #'      variable name, period that the data is available, unity, year, and variable name.

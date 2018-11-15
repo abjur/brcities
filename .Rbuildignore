@@ -6,3 +6,5 @@
 ^codecov\.yml$
 ^appveyor\.yml$
 ^brcities\.Rproj$
+^_pkgdown\.yml$
+^docs$

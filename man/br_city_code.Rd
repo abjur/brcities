@@ -18,8 +18,8 @@ A dataset containing the state cities' names, their respective codes and states.
 \itemize{
   \item city_code. a seven digit city code
   \item city_name. city official name
-  \item uf_code. a tow digit federal unity (states and the federal distric) code
-  \item uf. federal unity acronim
+  \item uf_code. a tow digit federal unity (states and the federal district) code
+  \item uf. federal unity acronym
   \item uf_name. federal unity name
   \item latitude. city latitude
   \item longitude. city longitude

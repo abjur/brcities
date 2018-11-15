@@ -11,7 +11,7 @@ sp_indicators(year, place, variable)
 
 \item{place}{code, according to place data.}
 
-\item{variable}{variable code acording to variable data.}
+\item{variable}{variable code according to variable data.}
 }
 \value{
 a data frame with place code, place name, parent place,variable code,
