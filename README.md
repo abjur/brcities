@@ -1,5 +1,5 @@
 
-brcities <img src="man/figures/city.png" align="right" alt="logo" width="120" height = "120" style = "border: none; float: right;"/>
+brcities <img src="man/figures/city.png" align="right" alt="logo" width="150" height = "150" style = "border: none; float: right;"/>
 ====================================================================================================================================
 
 [![Travis-CI Build Status](https://travis-ci.org/abjur/brcities.svg?branch=master)](https://travis-ci.org/abjur/brcities) [![Coverage status](https://codecov.io/gh/abjur/brcities/branch/master/graph/badge.svg)](https://codecov.io/github/abjur/brcities?branch=master) [![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/jjesusfilho/brcities?branch=master&svg=true)](https://ci.appveyor.com/project/jjesusfilho/brcities)
