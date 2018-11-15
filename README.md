@@ -1,8 +1,11 @@
 
+brcities <img style="width:4.39cm;"  src="man/figures/city.png" align="right"/>
+===============================================================================
+
 [![Travis-CI Build Status](https://travis-ci.org/abjur/brcities.svg?branch=master)](https://travis-ci.org/abjur/brcities) [![Coverage status](https://codecov.io/gh/abjur/brcities/branch/master/graph/badge.svg)](https://codecov.io/github/abjur/brcities?branch=master) [![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/jjesusfilho/brcities?branch=master&svg=true)](https://ci.appveyor.com/project/jjesusfilho/brcities)
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
-brcities
+Overview
 ========
 
 The goal of brcities is to download Brazilian cities' indicators from the Brazilian National Institute of Geography and Statistics, aka IBGE. For the time being, it also downloads cities demographics from Fundação Seade in São Paulo. We hope to add more data from states's level government sources.
